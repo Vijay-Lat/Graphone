@@ -1,14 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import GradientBtn from './GradientBtn';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [component,setComponent] = useState<string>('')
 
+  const styleComponents = [{
+    key: 'gradBtn',
+    value:GradientBtn 
+  }]
+console.log(component,'component');
   return (
     <>
-      Graphone
+      <nav>
+        <p>Styling Parade</p>
+        <select name="" id="" onChange={(e) => {
+          setComponent(e.target.value);
+        }}>
+          <option value="">Select</option>
+          <option value="gradBtn">Gradient Btn</option>
+        </select>
+      </nav>
+      {
+        styleComponents?.length>0 && component &&   styleComponents.filter((comp) =>
+          comp.key === component 
+        )[0].value()
+      }
     </>
   )
 }
