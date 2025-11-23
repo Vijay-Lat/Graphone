@@ -1,8 +1,15 @@
 html,body{
   margin: 0;
   padding: 0;
+  /* font-size: 62.5%; */
 }
 
 :root {
+  --font-family:'Karla',sans-serif;
+  --body-bg:#1E1F25;
+  --white-col:#fff;
+  --btn-color:#cbcbcb;
+  --btn-color-hover:#fff;
+  --btn-bg:#000;
 
 }

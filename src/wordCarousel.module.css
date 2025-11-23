@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1:after{
+    content: '';
+    background-color: blue;
+    color: white;
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 10px;
+    animation: carousel 6s infinite;
+}
+
+@keyframes carousel {
+    0%{
+        content: 'Sky';
+    }
+    25%{
+        content: 'Fire';
+    }
+    50%{
+        content: 'Soil';
+    }
+    75%{
+        content: 'Air';
+    }
+    100%{
+        content: 'Water';
+    }
+    
+}

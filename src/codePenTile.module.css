@@ -1,0 +1,78 @@
+.codePenTileContainer{
+   /* height: 100dvh; */
+   /* display: flex;
+   justify-content: center; */
+   color: #fff;
+   font-family: 'Noto Sans';
+
+}
+
+p,h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding-left: 0;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.card , img{
+    border-radius: 10px;
+}
+
+   .card{
+    max-width: 300px;
+    background-color: #1e1f26;
+    padding: 1em;
+    margin: auto;
+}
+.cardThumbNail img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.cardBody{
+    display: flex;
+    margin-top: 1em;
+}
+.cardAvatar img{
+  height: 50px;
+  width: 50px;
+  margin-right:1em ;
+}
+.cardDetails{
+    line-height: 1.5;
+}
+.cardDetails h3{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.cardDetails p{
+    font-size: .85rem;
+    color: #b7bbc8;
+}
+
+.cardStats{
+    display: none;
+    padding-bottom: .5rem;
+}
+
+.cardStats li{
+    background-color: #131417;
+    padding: .25rem .5rem;
+    margin-right: .5rem;
+    border-radius: 5px;
+}
+
+.card:hover .cardStats{
+    display: flex;
+
+}
+
+.card:hover{
+    padding-bottom: 0;
+}

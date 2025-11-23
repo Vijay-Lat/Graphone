@@ -1,0 +1,37 @@
+.rings,
+.ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.ring {
+    border-radius: 50%;
+}
+
+.ring_one {
+    background-color: #000;
+    height: 200px;
+    width: 200px;
+}
+
+.ring_two {
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+
+}
+
+.ring_three {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+
+}
+
+.bulls_eye {
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+}
