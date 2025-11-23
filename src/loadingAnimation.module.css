@@ -1,0 +1,29 @@
+.container {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #000;
+    border-radius: 50%;
+    margin: .5em;
+    animation: shrink infinite alternate 1s;
+}
+/*(shrink) this name is user's choice and it is called as identifier  */
+@keyframes shrink {
+    from {
+        background-color: lightgray;
+    }
+
+    to {
+        height: 1.6em;
+        width: 1.6em;
+        background-color: gray;
+
+    }
+
+}

@@ -1,0 +1,16 @@
+.navBar{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+}
+
+.navHeader{
+    font-size: 1.8rem;
+    font-style: comic sans;
+}
+
+.option{
+    cursor: pointer;
+}

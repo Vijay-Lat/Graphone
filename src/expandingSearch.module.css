@@ -1,0 +1,39 @@
+.expandingSearchBox{
+    padding: 2em;
+    width: 80%;
+    margin: auto;
+    min-width: 320px;
+    background-color: green;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.searchBar{
+    width: 30%;
+    border-radius: 4px;
+    line-height: 2;
+    border: 1px solid blue;
+    transition: all .3s;
+}
+
+.searchBar:focus{
+    width: 100%;
+    border: 1px solid red;
+}
+
+.searchBar::placeholder{
+    font-weight: 400;
+}
+
+.searchBar:focus::placeholder{
+    color: transparent;
+}
