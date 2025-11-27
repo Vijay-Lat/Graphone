@@ -7,6 +7,8 @@ const LoadingAnimation = lazy(() => import('./LoadingAnimation'));
 const RotatingSquare = lazy(() => import('./RotatingSquare'));
 const Archerytarget = lazy(() => import('./Archerytarget'));
 const WordCarousel = lazy(() => import('./WordCarousel'));
+const FrenchFlag = lazy(() => import('./FrenchFlag'));
+const GermanFlag = lazy(() => import('./GermanFlag'));
 
 
 
@@ -37,9 +39,17 @@ function App() {
     key: 'archery',
     value: Archerytarget,
   },
-   {
+  {
     key: 'wordCarousel',
     value: WordCarousel,
+  },
+  {
+    key: 'frenchFlag',
+    value: FrenchFlag,
+  },
+  {
+    key: 'germanFlag',
+    value: GermanFlag,
   },
   ]
 
@@ -51,31 +61,31 @@ function App() {
     { key: 'rotatingSquare', optionName: 'Rotating Square' },
     { key: 'archery', optionName: 'Archery Target' },
     { key: 'wordCarousel', optionName: 'Word Carousel' },
-
-
+    { key: 'frenchFlag', optionName: 'French Flag' },
+    { key: 'germanFlag', optionName: 'German Flag' },
   ]
   const SelectedComponent = styleComponents.find(c => c.key === component)?.value;
 
-return (
-  <Suspense>
-    <nav className={styles.navBar}>
-      <p className={styles.navHeader}>Styling Parade</p>
-      <select
-        className={styles.option}
-        onChange={(e) => setComponent(e.target.value)}
-      >
-        <option value="">Select</option>
-        {options.map((opt) => (
-          <option key={opt.key} value={opt.key}>
-            {opt.optionName}
-          </option>
-        ))}
-      </select>
-    </nav>
+  return (
+    <Suspense>
+      <nav className={styles.navBar}>
+        <p className={styles.navHeader}>Styling Parade</p>
+        <select
+          className={styles.option}
+          onChange={(e) => setComponent(e.target.value)}
+        >
+          <option value="">Select</option>
+          {options.map((opt) => (
+            <option key={opt.key} value={opt.key}>
+              {opt.optionName}
+            </option>
+          ))}
+        </select>
+      </nav>
 
-    {SelectedComponent && <SelectedComponent />}
-  </Suspense>
-);
+      {SelectedComponent && <SelectedComponent />}
+    </Suspense>
+  );
 
 }
 
