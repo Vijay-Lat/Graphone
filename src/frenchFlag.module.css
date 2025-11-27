@@ -1,0 +1,31 @@
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flagContainer{
+    /* display: flex; */
+    height: 150px;
+    width: calc(150px * 3/2);
+    margin: 2em;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.stripes{
+    /* flex-grow: 1; */
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+
+}
+.white{
+    background-color: white;
+
+}

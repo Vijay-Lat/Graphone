@@ -1,0 +1,22 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.flagContainer{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    width: calc(150px * 5/3);
+    height: 150px;
+
+}
+
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
