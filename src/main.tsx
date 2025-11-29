@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx';
 import { registerSW } from 'virtual:pwa-register';
 
-const updateSW = registerSW({
+ registerSW({
   onNeedRefresh() {
     // Logic to notify user that new content is available
     console.log('New content available, please refresh.');
