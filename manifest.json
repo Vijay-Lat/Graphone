@@ -1,0 +1,52 @@
+{
+  "name": "My Progressive Web App",
+  "short_name": "MyPWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2196f3", 
+  "theme_color": "#ffffff",      
+
+  "description": "A description of your PWA, explaining its key features and benefits to the user. This appears in the Richer Install Dialog.",
+
+  "orientation": "portrait",
+
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+
+    {
+      "src": "/icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/images/mobile-screenshot-1.png",
+      "sizes": "540x720", 
+      "type": "image/png",
+      "form_factor": "narrow" 
+    },
+    {
+      "src": "/images/desktop-screenshot-1.png",
+      "sizes": "1280x720", 
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+
+  "scope": "/", 
+  "prefer_related_applications": false
+}
