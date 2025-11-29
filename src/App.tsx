@@ -9,6 +9,8 @@ const Archerytarget = lazy(() => import('./Archerytarget'));
 const WordCarousel = lazy(() => import('./WordCarousel'));
 const FrenchFlag = lazy(() => import('./FrenchFlag'));
 const GermanFlag = lazy(() => import('./GermanFlag'));
+const MadagascarFlag = lazy(() => import('./MadagascarFlag'));
+
 
 
 
@@ -51,6 +53,10 @@ function App() {
     key: 'germanFlag',
     value: GermanFlag,
   },
+   {
+    key: 'madaFlag',
+    value: MadagascarFlag,
+  },
   ]
 
   const options = [
@@ -63,6 +69,10 @@ function App() {
     { key: 'wordCarousel', optionName: 'Word Carousel' },
     { key: 'frenchFlag', optionName: 'French Flag' },
     { key: 'germanFlag', optionName: 'German Flag' },
+    {
+    key: 'madaFlag',
+    optionName: 'MadagascarFlag',
+  },
   ]
   const SelectedComponent = styleComponents.find(c => c.key === component)?.value;
 
