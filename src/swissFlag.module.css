@@ -1,0 +1,23 @@
+.swissFlag{
+    background-color: red;
+    height: 220px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstCross{
+    height: calc(220px * 3/16);
+    width: calc(220px * 5/8);
+    background-color: #fff;
+}
+
+.secondCorss{
+    height: calc(220px * 5/8);
+    width: calc(220px * 3/16);
+    background-color: #fff;
+    position: absolute;
+}
+
+

@@ -1,9 +1,7 @@
 .container {
     display: flex;
-    background-color: var(--body-bg);
     align-items: center;
     justify-content: center;
-    height: 100dvh;
 }
 
 .buttonBorder {
