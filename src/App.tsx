@@ -1,5 +1,6 @@
 import { lazy, Suspense, useState } from 'react'
 import styles from './app.module.css'
+import ToggleSwitch from './ToggleSwitch';
 const GradientBtn = lazy(() => import('./GradientBtn'));
 const ExpandingSearch = lazy(() => import('./ExpandingSearch'));
 const CodepenTile = lazy(() => import('./CodepenTile'));
@@ -10,6 +11,7 @@ const WordCarousel = lazy(() => import('./WordCarousel'));
 const FrenchFlag = lazy(() => import('./FrenchFlag'));
 const GermanFlag = lazy(() => import('./GermanFlag'));
 const MadagascarFlag = lazy(() => import('./MadagascarFlag'));
+const SwissFlag = lazy(() => import('./SwissFlag'));
 
 
 
@@ -57,6 +59,14 @@ function App() {
     key: 'madaFlag',
     value: MadagascarFlag,
   },
+   {
+    key: 'swissFlag',
+    value: SwissFlag,
+  },
+  {
+    key: 'toggleSwitch',
+    value: ToggleSwitch,
+  },
   ]
 
   const options = [
@@ -73,6 +83,14 @@ function App() {
     key: 'madaFlag',
     optionName: 'MadagascarFlag',
   },
+  {
+    key: 'swissFlag',
+    optionName: 'Swiss Flag',
+  },
+   {
+    key: 'toggleSwitch',
+    optionName: 'Toggle Switch',
+  },
   ]
   const SelectedComponent = styleComponents.find(c => c.key === component)?.value;
 
@@ -87,13 +105,14 @@ function App() {
           <option value="">Select</option>
           {options.map((opt) => (
             <option key={opt.key} value={opt.key}>
-              {opt.optionName}
+              {opt?.optionName}
             </option>
           ))}
         </select>
       </nav>
-
+<div className={styles.componentContainer}>
       {SelectedComponent && <SelectedComponent />}
+      </div>
     </Suspense>
   );
 

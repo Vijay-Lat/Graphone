@@ -1,16 +1,27 @@
-.navBar{
+.navBar {
     display: flex;
     background-color: blueviolet;
     justify-content: space-between;
-    margin-bottom: 1rem;
-
+    align-items: center; /* Center children vertically */
+    padding: 0 1rem;     /* Add some breathing room on the sides */
+    height: 50px;
 }
 
-.navHeader{
+.navHeader {
     font-size: 1.8rem;
-    font-style: comic sans;
+    margin: 0;           /* Remove default paragraph margins */
+    line-height: 1;      /* Ensures the text box doesn't exceed the height */
+    font-family: "Comic Sans MS", "Comic Sans", cursive; /* Corrected font property */
 }
-
 .option{
     cursor: pointer;
+}
+
+.componentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100dvh - 50px);
+    background-color: aliceblue;
+    width: 100dvw;
 }
