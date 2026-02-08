@@ -6,6 +6,7 @@ import HeartCard from './HeartCard';
 import Progressbar from './Progressbar';
 import FlipCard from './FlipCard';
 import LoadingCircle from './LoadingCircle';
+import InstaStory from './InstaStory';
 const GradientBtn = lazy(() => import('./GradientBtn'));
 const ExpandingSearch = lazy(() => import('./ExpandingSearch'));
 const CodepenTile = lazy(() => import('./CodepenTile'));
@@ -92,6 +93,10 @@ function App() {
     key: 'loadingCircle',
     value: LoadingCircle,
   },
+  {
+    key: 'instaStory',
+    value: InstaStory,
+  },
   ]
 
   const options = [
@@ -135,6 +140,10 @@ function App() {
    {
     key: 'loadingCircle',
     optionName: 'Loading Circle',
+  },
+   {
+    key: 'instaStory',
+    optionName: 'Insta Story',
   },
   ]
   const SelectedComponent = styleComponents.find(c => c.key === component)?.value;
