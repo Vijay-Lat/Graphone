@@ -1,6 +1,11 @@
 import { lazy, Suspense, useState } from 'react'
 import styles from './app.module.css'
 import ToggleSwitch from './ToggleSwitch';
+import Spade from './Spade';
+import HeartCard from './HeartCard';
+import Progressbar from './Progressbar';
+import FlipCard from './FlipCard';
+import LoadingCircle from './LoadingCircle';
 const GradientBtn = lazy(() => import('./GradientBtn'));
 const ExpandingSearch = lazy(() => import('./ExpandingSearch'));
 const CodepenTile = lazy(() => import('./CodepenTile'));
@@ -67,6 +72,26 @@ function App() {
     key: 'toggleSwitch',
     value: ToggleSwitch,
   },
+  {
+    key: 'spade',
+    value: Spade,
+  },
+    {
+    key: 'heart',
+    value: HeartCard,
+  },
+     {
+    key: 'progressBar',
+    value: Progressbar,
+  },
+   {
+    key: 'flipCard',
+    value: FlipCard,
+  },
+   {
+    key: 'loadingCircle',
+    value: LoadingCircle,
+  },
   ]
 
   const options = [
@@ -90,6 +115,26 @@ function App() {
    {
     key: 'toggleSwitch',
     optionName: 'Toggle Switch',
+  },
+   {
+    key: 'spade',
+    optionName: 'Spade',
+  },
+  {
+    key: 'heart',
+    optionName: 'Heart',
+  },
+  {
+    key: 'progressBar',
+    optionName: 'ProgressBar',
+  },
+   {
+    key: 'flipCard',
+    optionName: 'Flip Card',
+  },
+   {
+    key: 'loadingCircle',
+    optionName: 'Loading Circle',
   },
   ]
   const SelectedComponent = styleComponents.find(c => c.key === component)?.value;

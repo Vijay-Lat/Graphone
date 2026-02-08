@@ -1,0 +1,37 @@
+.card{
+height: 300px;
+width: 300px;
+color: #fff;
+background-color: blue;
+padding: 2em;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+transition: transform .6s;
+transform-style: preserve-3d; 
+}
+
+.card:hover{
+transform: rotateY(180deg);
+} 
+
+.card:hover .cardFront{
+ display: none;
+}
+
+.cardBack{
+display: none;
+}
+
+.card:hover .cardBack{
+ display: block;
+ transform: rotateY(180deg);
+
+}
+
+.cardFront , .cardBack{
+backface-visibility: hidden;
+}
