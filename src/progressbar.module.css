@@ -1,0 +1,25 @@
+.container{
+
+    width: 80%;
+}
+
+
+.progressBar{
+    background-color: lightgray;
+    height: 40px;
+    border-radius: 20px;
+
+}
+
+.progStatus{
+  height: 40px;
+  border-radius: 20px;
+
+}
+
+
+.fourthPart{
+    width: 50%;
+    background-color: red;
+
+}
